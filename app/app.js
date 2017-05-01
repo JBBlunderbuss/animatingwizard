@@ -2,7 +2,15 @@
 
     angular.module('app', ['ngAnimate'])
         .component('mainComponent', {
-            templateUrl: 'app/mainComponent.html',
+            template: `
+            <div class="mainComponent" ng-style="$ctrl.style">
+                <div class="actions">
+                    <button ng-click="$ctrl.toggle()">toggle</button>
+                </div>
+                <comp-one ng-if="$ctrl.viewState == 1" class="comp">/</comp-one>
+                <comp-two ng-if="$ctrl.viewState == 2" class="comp"></comp-two>
+            </div>
+            `,
             controller: ['$timeout', function($timeout){
                 var vm = this;
                 vm.viewState = 0
