@@ -1,0 +1,11 @@
+.mainComponent {
+    transition: all 1s ease-in-out;
+    max-height: 0px;
+}
+
+.actions {
+    z-index: 100;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
