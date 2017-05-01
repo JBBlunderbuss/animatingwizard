@@ -1,0 +1,17 @@
+{
+  "name": "ddctestwizard",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "James Blundell <j8blundell@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
