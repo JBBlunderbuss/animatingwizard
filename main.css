@@ -1,6 +1,6 @@
 .mainComponent {
     transition: all 1s ease-in-out;
-    max-height: 0px;
+    position: relative;
 }
 
 .actions {
@@ -8,4 +8,36 @@
     position: absolute;
     right: 0;
     top: 0;
+}
+
+.comp {
+    opacity: 1;
+    transition: all .33s ease-in-out;
+    display: block;
+}
+
+h2 { 
+    margin-top: 0;
+}
+
+.comp.ng-enter {
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+}
+
+.comp.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+.comp.ng-leave {
+    top: 0;
+    position: absolute;
+    opacity: 1;
+    z-index: -1;
+}
+
+.comp.ng-leave.ng-leave-active {
+    opacity: 0;
 }

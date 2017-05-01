@@ -1,8 +1,7 @@
-<div class="mainComponent">
+<div class="mainComponent" ng-style="$ctrl.style">
     <div class="actions">
         <button ng-click="$ctrl.toggle()">toggle</button>
     </div>
-
-    <comp-one ng-if="$ctrl.viewState == 1">/</comp-one>
-    <comp-two ng-if="$ctrl.viewState == 2"></comp-two>
+    <comp-one ng-if="$ctrl.viewState == 1" class="comp">/</comp-one>
+    <comp-two ng-if="$ctrl.viewState == 2" class="comp"></comp-two>
 </div>
